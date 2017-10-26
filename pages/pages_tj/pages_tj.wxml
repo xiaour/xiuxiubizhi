@@ -34,19 +34,34 @@
     </view>
   </block>
 </view>
+
 <view class="recommend_tr_desc">
-<text>热门</text>
 <image class="image_icon" src="../image/热门.png" mode="aspectFit"></image>
+ <text> 热门图集</text>
 </view>
 <view class="recommend_sp">
-  <block wx:for = "{{image_sp}}" wx:key="{{title}}">
+  <block wx:for = "{{image_hot}}" wx:key="{{title}}">
     <view style= "width:350rpx;" class="recommend_sp_img">
       <image class="image1" src="{{item.img}}" mode="aspectFill"></image>
       <text class="shiping">{{item.title}}</text>
     </view>
   </block>
 </view>
+
+<view class="recommend_tr_desc">
+ <text>精选图片</text>
 </view>
+<view class="recommend_sp">
+  <block wx:for = "{{image_index}}" wx:key="{{title}}">
+    <view style= "width:220rpx;" class="recommend_index_img">
+      <image class="image2" src="{{item.img}}" mode="aspectFill"></image>
+      <text class="shiping">{{item.title}}</text>
+    </view>
+  </block>
+</view>
+</view>
+
+
 
 <!--手游-->
 <view hidden="{{currentTab!==1}}">
@@ -71,11 +86,11 @@
   </swiper>
 </view>
 <view class="recommend_tr_desc">
-<text>热门</text>
-<image class="image_icon" src="../image/热门.png" mode="aspectFit"></image>
+<image class="image_icon" src="../image/新.png" mode="aspectFit"></image>
+<text> 最新图片</text>
 </view>
 <view class="recommend_sp">
-  <block wx:for = "{{image_sp}}" wx:key="{{title}}">
+  <block wx:for = "{{image_new}}" wx:key="{{title}}">
     <view style= "width:350rpx;" class="recommend_sp_img">
       <image class="image1" src="{{item.img}}" mode="aspectFill"></image>
       <text class="shiping">{{item.title}}</text>

@@ -34,56 +34,80 @@ Page({
   {img:"../image/阴阳师.jpg",
       name:"阴阳师"
   }],
+  //顶部轮播图
     slider: [{
-        picUrl:"../image/1.jpg",
+      picUrl:"http://oxmyk0wbf.bkt.clouddn.com/index1.jpg",
         id:"1"
     },{
-        picUrl:"../image/2.jpg",
+        picUrl:"http://oxmyk0wbf.bkt.clouddn.com/index2.jpg",
         id:"2"
     },{
-        picUrl:"../image/3.jpg",
+        picUrl:"http://oxmyk0wbf.bkt.clouddn.com/index3.jpg",
         id:"3"
     }],
 
 
     image:[
     {
-      img:"../image/排行榜.png",
-      title:"美女车模",
+        img:"../image/美女车模.png",
+      title:"看美女",
       id:"美女车模"
     },
     {
-      img:"../image/消息.png",
-        title:"风景旅游",
+      img:"../image/风景旅游.png",
+        title:"赏风景",
         id:"风景旅游"
     },{
-      img:"../image/活动.png",
-        title:"表情图片",
+      img:"../image/表情图片.png",
+        title:"斗表情",
         id:"表情图片"
     },{
-      img:"../image/直播.png",
-        title:"我喜欢的",
+      img:"../image/我喜欢的.png",
+        title:"我喜欢",
         id:"我喜欢的"
     }],
-    image_sp:[{
-      img:"../image/4.jpg",
+    image_hot:[{
+      img:"http://ofad883tk.bkt.clouddn.com/xiaomao.jpg",
       title:""
     },{
-      img:"../image/5.jpg",
+        img:"http://ofad883tk.bkt.clouddn.com/xiaogou.jpg",
       title:""
-    },{
-      img:"../image/6.jpg",
-      title:""
-    },{
-      img:"../image/7.jpg",
-      title:""
-    },{
-      img:"../image/8.jpg",
-      title:""
-    },{
-      img:"../image/9.jpg",
-      title:""
-    }],
+      }],
+    image_index: [{
+      img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%282%29.jpeg",
+      title: ""
+    }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%283%29.jpg",
+      title: ""
+      }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%283%29.jpeg",
+        title: ""
+    }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%284%29.jpeg",
+      title: ""
+      }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%285%29.jpg",
+        title: ""
+    }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%286%29.jpg",
+      title: ""
+      }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%287%29.jpg",
+        title: ""
+    }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%282%29.jpg",
+      title: ""
+      }, {
+        img: "http://ofad883tk.bkt.clouddn.com/index_bz%20%281%29.jpg",
+        title: ""
+      }],
+      image_new: [{
+        img: "../image/4.jpg",
+        title: ""
+      }, {
+        img: "../image/5.jpg",
+        title: ""
+      }],
     swiperCurrent:0,
     navbar: ['精选', '最新'],
     currentTab: 0
