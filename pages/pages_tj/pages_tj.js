@@ -117,6 +117,22 @@ recommend_tr_tap: function (){
     url:'/pages/pages_qw/pages_qw'
   })
 },
+//上推加载更多
+  loadMore: function () {
+    wx.showToast({
+      title: '没有更多的图片咯！',
+      icon: 'loading',
+      duration: 2000
+    })
+  },
+//下拉刷新
+  refesh:function(){
+    wx.showToast({
+      title: '已是最新内容咯！',
+      icon: 'loading',
+      duration: 2000
+    })
+  },
 
   navbarTap: function(e){
     this.setData({
@@ -182,7 +198,28 @@ swiperChange:function(e){
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    var nickName = "";
+    wx.getUserInfo({
+      success: function (resdata) {
+        var userInfo = resdata.userInfo;
+        nickName = userInfo.nickName;
+      }
+    })
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '这个羞羞图挺有意思的，来看看吧',
+      path: '/pages/pages_tj/pages_tj',
+      imageUrl:'http://oxmyk0wbf.bkt.clouddn.com/index2.jpg',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
 })

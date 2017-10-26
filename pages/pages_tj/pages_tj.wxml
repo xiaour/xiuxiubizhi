@@ -6,7 +6,9 @@
         wx:key="unique" bindtap="navbarTap">{{item}}</text>
 </view>
 
-<!--推荐-->
+<!--首页精选-->
+<scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+
 <view hidden="{{currentTab!==0}}">
   <view class="recommend" >
     <view class="swiper-container">
@@ -19,14 +21,14 @@
         </block>
       </swiper>
       <view class="dots">
-      <block wx:for="{{slider}}" wx:key="">
+      <block wx:for="{{slider}}">
         <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
       </block>
     </view>
   </view>
   </view>
 <view class="recommend_tr">
- <block wx:for = "{{image}}" wx:key="">
+ <block wx:for = "{{image}}">
     <view bindtap="recommend_tr_tap"
     class="recommend_tr_img">
       <image class="image" id="{{item.id}}" src="{{item.img}}" mode="aspectFit"></image>
@@ -61,28 +63,21 @@
 </view>
 </view>
 
-
+ </scroll-view>
 
 <!--手游-->
 <view hidden="{{currentTab!==1}}">
   <view class="page1-top">
     <swiper class="navban" duration="1000" indicator-dots="true" indicator-active-color="#FFCE43">
           <swiper-item>
-              <block wx:for="{{navs}}" key="">
+              <block wx:for="{{navs}}">
                   <view class="navbox">
                       <image class="navimg" src="{{item.img}}"></image>
                       <text class="navtext">{{item.name}}</text>
                   </view>
                </block>
           </swiper-item>
-          <swiper-item>
-              <block wx:for="{{navs}}" key="">
-                  <view class="navbox">
-                      <image class="navimg" src="{{item.img}}"></image>
-                      <text class="navtext">{{item.name}}</text>
-                  </view>
-               </block>
-          </swiper-item>
+         
   </swiper>
 </view>
 <view class="recommend_tr_desc">

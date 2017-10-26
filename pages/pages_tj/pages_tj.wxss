@@ -68,7 +68,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
-border-bottom: 15rpx solid #D8D8D8;
+border-bottom: 10rpx solid #D8D8D8;
 }
 .recommend_tr .recommend_tr_img image{
   padding:15rpx;
@@ -100,6 +100,7 @@ border-bottom: 15rpx solid #D8D8D8;
   flex-wrap: wrap;
   justify-content: space-between;
   overflow:hidden;
+  border-bottom: 10rpx solid #D8D8D8;
 }
 .recommend_sp_img{
   position: relative;
@@ -130,7 +131,6 @@ border-bottom: 15rpx solid #D8D8D8;
   margin-top: 5rpx;
   height: 50rpx;
   line-height: 50rpx;
-
 }
 .navban{
     height: 300rpx;
@@ -139,7 +139,7 @@ border-bottom: 15rpx solid #D8D8D8;
   margin-top: 100rpx;
   height: 300rpx;
   width:746rpx;
-  border-bottom: 15rpx solid #D8D8D8;
+  border-bottom: 10rpx solid #D8D8D8;
 }
 .page1-top .navbox{
   display: inline-block;
