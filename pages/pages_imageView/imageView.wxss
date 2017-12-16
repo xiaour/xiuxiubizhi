@@ -1,0 +1,4 @@
+/* pages/pages_imageView/imageView.wxss */
+page{height:100%;width: 100%;background: #212121}
+.image_view{width: 100%;height: 100%}
+.fixedBtn{width: 100%;position: fixed;bottom: 0rpx;text-align:center;color: #CCC}

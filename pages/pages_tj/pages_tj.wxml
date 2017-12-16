@@ -44,8 +44,7 @@
 <view class="recommend_sp">
   <block wx:for = "{{image_hot}}" wx:key="{{title}}">
     <view style= "width:350rpx;" class="recommend_sp_img">
-      <image class="image1" src="{{item.img}}" mode="aspectFill"></image>
-      <text class="shiping">{{item.title}}</text>
+      <image class="image1" src="{{item.url}}" mode="aspectFill"></image>
     </view>
   </block>
 </view>
@@ -56,8 +55,8 @@
 <view class="recommend_sp">
   <block wx:for = "{{image_index}}" wx:key="{{title}}">
     <view style= "width:220rpx;" class="recommend_index_img">
-      <image class="image2" src="{{item.img}}" mode="aspectFill"></image>
-      <text class="shiping">{{item.title}}</text>
+      <image class="image2" data-id='{{item.id}}' data-url='{{item.url}}' src="{{item.url}}" mode="aspectFill" lazy-load='true' bindtap='imageView'></image>
+      <text class="shiping">{{item.flag}}</text>
     </view>
   </block>
 </view>

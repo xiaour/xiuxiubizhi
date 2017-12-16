@@ -5,12 +5,12 @@
     "pages/logs/logs",
     "pages/pages_sy/pages_sy",
     "pages/pages_yl/pages_yl",
-    "pages/pages_yx/pages_yx",
     "pages/pages_qw/pages_qw",
     "pages/tabbar_zb/tabbar_zb",
     "pages/tabbar_gz/tabbar_gz",
     "pages/tabbar_fx/tabbar_fx",
-    "pages/tabbar_wd/tabbar_wd"
+    "pages/tabbar_wd/tabbar_wd",
+    "pages/pages_imageView/imageView"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,5 +18,4 @@
     "navigationBarTitleText": "羞羞壁纸",
     "navigationBarTextStyle": "#FFF"
   }
-  
 }

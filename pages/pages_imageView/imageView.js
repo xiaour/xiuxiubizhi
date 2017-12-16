@@ -1,18 +1,22 @@
-// pages/pages_yx/pages_yx.js
+// pages/pages_imageView/imageView.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    imgUrl:"",
+    imgId:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      imgUrl: options.url,
+      imgid: options.id
+    });
   },
 
   /**

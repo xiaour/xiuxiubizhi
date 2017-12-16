@@ -1,0 +1,7 @@
+<!--pages/pages_imageView/imageView.wxml-->
+<image class="image_view" id="{{imageId}}" src="{{imgUrl}}" mode="aspectFit"></image>
+
+<view class='fixedBtn'>
+上下滑动可切换图片哦
+</view>
+

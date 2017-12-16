@@ -24,6 +24,8 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    apiServer:"https://totube.cn/xxbz/"
+
   }
 })
