@@ -1,10 +1,10 @@
-<!--导航条-->
-<view class="navbar">
+<!--导航条,切换滑块-->
+<!-- <view class="navbar">
  <text  wx:for="{{navbar}}"
         data-idx="{{index}}"
         class="item {{currentTab==index ? 'active' : ''}}"
         wx:key="unique" bindtap="navbarTap">{{item}}</text>
-</view>
+</view> -->
 
 <!--首页精选-->
 <scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="loadMore" bindscrolltoupper="refesh">
@@ -27,27 +27,18 @@
     </view>
   </view>
   </view>
-<view class="recommend_tr">
- <block wx:for = "{{image}}">
-    <view bindtap="recommend_tr_tap"
-    class="recommend_tr_img">
-      <image class="image" id="{{item.id}}" src="{{item.img}}" mode="aspectFit"></image>
-      <text class="coin">{{item.title}}</text>
-    </view>
-  </block>
-</view>
 
-<view class="recommend_tr_desc">
-<image class="image_icon" src="../image/热门.png" mode="aspectFit"></image>
+
+<!-- <view class="recommend_tr_desc">
  <text> 热门图集</text>
 </view>
 <view class="recommend_sp">
   <block wx:for = "{{image_hot}}" wx:key="{{title}}">
-    <view style= "width:350rpx;" class="recommend_sp_img">
+    <view  class="recommend_sp_img">
       <image class="image1" src="{{item.url}}" mode="aspectFill"></image>
     </view>
   </block>
-</view>
+</view> -->
 
 <view class="recommend_tr_desc">
  <text>精选图片</text>
@@ -55,8 +46,8 @@
 <view class="recommend_sp">
   <block wx:for = "{{image_index}}" wx:key="{{title}}">
     <view style= "width:220rpx;" class="recommend_index_img">
-      <image class="image2" data-id='{{item.id}}' data-url='{{item.url}}' src="{{item.url}}" mode="aspectFill" lazy-load='true' bindtap='imageView'></image>
-      <text class="shiping">{{item.flag}}</text>
+      <image class="image2" data-num='{{currentPageNum}}' data-id='{{item.id}}' data-url='{{item.url}}' src="{{item.url}}" mode="aspectFill" lazy-load='true' bindtap='imageView'></image>
+      <!--<text class="shiping">{{item.flag}}</text>-->
     </view>
   </block>
 </view>
@@ -91,4 +82,8 @@
     </view>
   </block>
 </view>
+
 </view>
+<!-- <view class='fixedBtn'>
+<image class='infoBtn' bindtap='getMyProfile' src='{{userInfo.avatarUrl}}' mode="aspectFit"></image>
+</view> -->

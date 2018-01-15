@@ -1,7 +1,12 @@
 <!--pages/pages_imageView/imageView.wxml-->
+<scroll-view  class="image_view" scroll-y="true"  >
 <image class="image_view" id="{{imageId}}" src="{{imgUrl}}" mode="aspectFit"></image>
-
+</scroll-view>
 <view class='fixedBtn'>
-上下滑动可切换图片哦
+<view class='leftBtn' bindtap='lastOne'></view>
+<view class='loveBtn' bindtap='iLikeIt'></view>
+<view class='downBtn' bindtap='download'></view>
+
+<view class='rightBtn' bindtap='nextOne'></view>
 </view>
 

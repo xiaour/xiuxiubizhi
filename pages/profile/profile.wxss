@@ -1,0 +1,16 @@
+/* pages/profile/profile.wxss */
+page{
+background: #EEE;
+}
+.mainView{
+  width: 100%;height: 100%;justify-content: center;display: flex
+  }
+
+.infoImg{width: 80px;height: 80px;background-size: cover;border-radius:100rpx;border: 2px solid #DDDDDD;justify-content:center;margin-top: 20px}
+
+.infoView{
+  width: 100%;height: 20px;justify-content:center;display: flex;
+}
+.infoListView{
+  background: #FFF;margin-top: 50px;
+}

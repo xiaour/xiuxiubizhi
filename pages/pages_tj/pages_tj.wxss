@@ -32,7 +32,8 @@ page{
 }
 .swiper-container{
   position: relative;
-  margin-top:85rpx;
+  /* margin-top:85rpx; */
+  margin-top:3rpx;
 }
 .swiper-container .swiper{
   height: 420rpx;
@@ -98,7 +99,7 @@ border-bottom: 10rpx solid #D8D8D8;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-around;
   overflow:hidden;
   border-bottom: 10rpx solid #D8D8D8;
 }
@@ -156,3 +157,8 @@ border-bottom: 10rpx solid #D8D8D8;
   justify-content: center;
   font-size: 24rpx;
 }
+
+.fixedBtn{width: 100%;position: fixed;bottom: 10rpx;display:flex;flex-direction: row;color: #CCC;justify-content:flex-start;align-items: center;}
+
+.infoBtn{width: 40px;height: 40px;background-size: cover;border-radius:50rpx;border: 2px solid #DDDDDD;justify-content:center;}
+

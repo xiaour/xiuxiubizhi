@@ -1,0 +1,10 @@
+<!--pages/profile/profile.wxml-->
+<view class='mainView'>
+<image class='infoImg' src='{{userInfo.avatarUrl}}' mode="aspectFit"></image>
+
+</view>
+<view class='infoView'><label>{{userInfo.nickName}}</label></view>
+<view class='infoListView'>
+<label>我喜欢的</label>
+<label>我喜欢的</label>
+</view>
